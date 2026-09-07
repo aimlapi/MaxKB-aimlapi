@@ -1,6 +1,7 @@
 # coding=utf-8
 from enum import Enum
 
+from models_provider.impl.aimlapi_model_provider.aimlapi_model_provider import AIMLAPIModelProvider
 from models_provider.impl.aliyun_bai_lian_model_provider.aliyun_bai_lian_model_provider import \
     AliyunBaiLianModelProvider
 from models_provider.impl.anthropic_model_provider.anthropic_model_provider import AnthropicModelProvider
@@ -27,6 +28,7 @@ from models_provider.impl.zhipu_model_provider.zhipu_model_provider import ZhiPu
 
 
 class ModelProvideConstants(Enum):
+    model_aimlapi_provider = AIMLAPIModelProvider()
     model_azure_provider = AzureModelProvider()
     model_wenxin_provider = WenxinModelProvider()
     model_ollama_provider = OllamaModelProvider()
